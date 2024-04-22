@@ -1,6 +1,6 @@
 
 <template>
-  <HeaderBase></HeaderBase>
+  <HeaderBase class="z-10"></HeaderBase>
   <RouterView/>
 </template>
 
