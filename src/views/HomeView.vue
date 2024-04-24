@@ -28,12 +28,12 @@
           <CardFeatures v-for="cardItem in CardContent" :title="cardItem.title" :description="cardItem.description"  :imgUrl="cardItem.imgUrl"></CardFeatures>
         </section>
       </div>
-      <div>
-        <section id="services" class="w-full h-auto mt-16 p-6 text-neutral-50 grid place-items-center bg-black">
-          <fwb-heading class="text-lg mb-6 font-bold" tag="h1">Servicios</fwb-heading>
-          <fwb-p class="text-center">
+      <div id="services">
+        <section class="w-full h-auto mt-16 p-6 text-neutral-50 grid place-items-center bg-black">
+          <h1 class="text-lg mb-6 font-bold" tag="h1">Servicios</h1>
+          <p class="text-center">
             Nuestros servicios está enfocados en prevenir errores humanos y garantizar el servicio a tus clientes
-          </fwb-p>
+          </p>
           <section class="mt-20 w-full grid place-items-center gap-y-10 grid-cols-[1fr] sm:grid-cols-[1fr_1fr] xl:grid-cols-[1fr_1fr_1fr]">
             <CardServices class="mt-10" v-for="cardItem in CardServicesInfo" :title="cardItem.title" :description="cardItem.description"  :imgUrl="cardItem.imgUrl"></CardServices>
           </section>
@@ -92,8 +92,7 @@ import DefaultLayout from '@/layouts/DefaultLayout.vue';
 import CardFeatures from '@/components/CardFeatures.vue';
 import CardServices from '@/components/CardServices.vue';
 
-import { FwbButton } from 'flowbite-vue'
-import { FwbInput } from 'flowbite-vue'
+import { FwbButton, FwbInput, FwbP, FwbHeading } from 'flowbite-vue'
 
 const name = ref('')
 
