@@ -6,14 +6,14 @@
         </fwb-navbar-logo>
       </template>
       <template #default="{isShowMenu}">
-        <fwb-navbar-collapse class="fixed top-[60px] px-[10px] right-[0px] w-11/12" :is-show-menu="isShowMenu">
+        <fwb-navbar-collapse class="fixed top-[60px] md:top-[0px] px-[10px] right-[0px] w-11/12" :is-show-menu="isShowMenu">
           <fwb-navbar-link @click="toggleMenu" link="#">
             Home
           </fwb-navbar-link>
-          <fwb-navbar-link @click="toggleMenu" link="#services">
+          <fwb-navbar-link @click="toggleMenu" link="#serv">
             Services
           </fwb-navbar-link>
-          <fwb-navbar-link @click="toggleMenu" link="#contact">
+          <fwb-navbar-link @click="toggleMenu" link="#contact-r">
             Contact
           </fwb-navbar-link>
         </fwb-navbar-collapse>

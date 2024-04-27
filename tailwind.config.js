@@ -9,7 +9,12 @@ export default {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "black-dark": "var(--vt-c-black)",
+        "black-soft": "var(--vt-c-black-soft)"
+      }
+    },
   },
   plugins: [
     require('flowbite/plugin')
